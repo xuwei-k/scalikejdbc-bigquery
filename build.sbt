@@ -8,7 +8,11 @@ version := "0.0.2-SNAPSHOT"
 
 publishMavenStyle := true
 
-scalaVersion := "2.11.8"
+val Scala211 = "2.11.8"
+
+scalaVersion := Scala211
+
+crossScalaVersions := Seq(Scala211, "2.12.1")
 
 scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature")
 
